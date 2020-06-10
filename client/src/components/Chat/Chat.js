@@ -18,7 +18,9 @@ const Chat = ({ location }) => {
   const [messages, setMessages] = useState([]);
 
   // set endpoint
-  const ENDPOINT = "https://crainechat.herokuapp.com/";
+  // DEV: set with localhost
+  // PROD: set with server url
+  const ENDPOINT = 'https://crainechat.herokuapp.com/';
 
   useEffect(() => {
     // get user input data
