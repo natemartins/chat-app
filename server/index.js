@@ -15,7 +15,7 @@ const io = socketio(server);
 
 // middlewares
 app.use(router);
-app.use(cors);
+app.use(cors());
 
 // implement socket connection
 io.on("connection", (socket) => {
